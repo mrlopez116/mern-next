@@ -1,4 +1,4 @@
-const express = require("experss");
+const express = require("express");
 const router = express.Router(); // Allows us to breakout our routes into modular chucnks
 // We will require them back in the server.js file.
 // This will allow us to use the patient directory
