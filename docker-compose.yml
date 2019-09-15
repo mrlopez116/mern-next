@@ -1,16 +1,9 @@
-version: '3'
+version: "3"
 services:
   web:
     container_name: mern-next
     image: mern-next
     build: .
-    command: node server.js
+    command: nodemon server.js
     ports:
       - "3000:3000"
-    depends_on:
-      - "mongo"
-  mongo:
-    container_name: mongo
-    image: "mongo"
-    ports:
-      - "27017:27017"

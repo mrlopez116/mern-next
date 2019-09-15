@@ -5,4 +5,4 @@ COPY ["package.json", "package-lock.json*", "next.config.js", "server.js", "./"]
 RUN npm install --production --silent && mv node_modules ../
 COPY . .
 EXPOSE 3000
-CMD node server.js
+CMD nodemon server.js
