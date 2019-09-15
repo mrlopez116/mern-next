@@ -22,7 +22,7 @@ var patientSchema = new mongoose.Schema({
         type: String,
         required: 'Email cannot be blank'
     },
-    patient_added: {
+    date_added: {
         type: Date,
         default: Date.now
     }

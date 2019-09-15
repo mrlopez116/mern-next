@@ -1,5 +1,9 @@
 import React from 'react'
-import App from 'next/app'
+import ReactDom from "react-dom"
+import "bootstrap/dist/css/bootstrap.min.css"
+import App, { Container } from 'next/app'
+import SideNavbar from '../components/SideNavbar'
+
 
 class MyApp extends App {
     // Only uncomment this method if you have blocking data requirements for
@@ -16,7 +20,12 @@ class MyApp extends App {
 
     render() {
         const { Component, pageProps } = this.props
-        return <Component {...pageProps} />
+        return (
+            <div>
+                <SideNavbar />
+                <Component {...pageProps} />
+            </div>
+        )
     }
 }
 

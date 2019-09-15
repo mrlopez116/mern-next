@@ -10,7 +10,7 @@ var patientRoutes = require("./routes/patients");
 app.prepare().than(() => {
     const server = express();
     server.use(bodyParser.json());
-    server.use(bodyParser.urlencoded({encoded:true}));
+    server.use(bodyParser.urlencoded({ encoded: true }));
 
     server.get("*", (req, res) => {
         return handle(req, res);

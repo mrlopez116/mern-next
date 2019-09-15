@@ -46,7 +46,7 @@ exports.deletePatient = (req, res) => {
     const patientId = req.params.patientId;
     db.Patient.remove(patientId)
         .then(function () {
-            res.json({ message: 'Patient delete' });
+            res.json({ message: 'Patient deleted' });
         })
         .catch(function (err) {
             res.send(err);
