@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import NamibiaFlag from "../assets/NamibiaFlag.png"
+import NamibiaFlag from "../assets/images/NamibiaFlag.png"
 // Adding bootstrap
 import Link from "next/Link" // Allows us to create links to other pages with NEXT>js
 
@@ -37,12 +37,12 @@ class SideNavbar extends Component {
             <div>
                 <Navbar color="light" light expand="md">
                     <NavbarBrand href="/">
-                        <img src={NamibiaFlag}
+                        {/* <img src={NamibiaFlag}
                             width="30"
                             height="30"
                             className="d-inline-block align-top"
                             alt="React Bootstrap logo"
-                        />
+                        /> */}
                     </NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
