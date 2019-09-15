@@ -1,0 +1,1 @@
+docker-compose build --build-arg UselessArg=$(date +%s) && docker-compose up
