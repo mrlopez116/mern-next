@@ -16,22 +16,20 @@
     "@zeit/next-css": "^1.0.1",
     "babel-loader": "^8.0.6",
     "bootstrap": "^4.3.1",
-    "css-loader": "^3.2.0",
     "express": "^4.17.1",
     "jquery": "^3.4.1",
     "mongoose": "^5.7.1",
     "next": "^9.0.5",
+    "nodemon": "latest",
     "popper.js": "^1.15.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
-    "reactstrap": "^8.0.1",
-    "style-loader": "^1.0.0",
-    "nodemon": "latest"
+    "reactstrap": "^8.0.1"
   },
   "devDependencies": {
+    "file-loader": "^4.2.0",
     "url-loader": "^2.1.0",
-    "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.8"
+    "webpack": "^4.40.2"
   }
 }
