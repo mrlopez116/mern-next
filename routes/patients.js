@@ -5,7 +5,7 @@ const router = express.Router(); // Allows us to breakout our routes into modula
 const db = require("../models");
 
 // All logic for database management and calls are in the helpers seperated by call/functionality
-const helpers = require("../helps/patients");
+const helpers = require("../helpers/patients");
 
 router.route('/')
     .get(helpers.getPatients)
