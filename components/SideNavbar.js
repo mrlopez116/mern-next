@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-//import img from "../assets/images/NamibiaFlag.png";
+import img from "../assets/images/NamibiaFlag.png";
 // Adding bootstrap
 import Link from "next/Link" // Allows us to create links to other pages with NEXT>js
 
@@ -35,25 +35,25 @@ class SideNavbar extends Component {
     render() {
         return (
             <div>
-                {/* <Navbar color="light" light expand="md">
-                    <NavbarBrand href="/"> */}
-                {/* {<img src={img}
+                <Navbar color="light" light expand="md">
+                    <NavbarBrand href="/">
+                        {<img src={img}
                             width="30"
                             height="30"
-                        />} */}
-                {/* </NavbarBrand>
+                        />}
+                    </NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/components/">Components</NavLink>
+                                <NavLink href="/addPatient">Add Patient</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                                <NavLink href="/directory">Directory</NavLink>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>
-                                    Options
+                                    Filtered
                 </DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem>
@@ -70,10 +70,8 @@ class SideNavbar extends Component {
                             </UncontrolledDropdown>
                         </Nav>
                     </Collapse>
-                </Navbar> */}
-                <h1>HEY THERE</h1>
+                </Navbar>
             </div>
-
         );
     }
 }

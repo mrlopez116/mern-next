@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from "react-dom"
-//import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 import App, { Container } from 'next/app'
 import SideNavbar from '../components/SideNavbar'
 
