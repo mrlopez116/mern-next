@@ -11,13 +11,13 @@ exports.getPatients = (req, res) => {
 }
 exports.createPatient = (req, res) => {
     db.Patient.create(req.body)
-        .them(function (newPatient) {
+        .then(function (newPatient) {
             // 201 code is something was created.
             res.status(201).json(newPatient);
         })
         .catch(function (err) {
             res.send(err);
-        })
+        });
 }
 
 exports.getPatient = (req, res) => {
@@ -28,7 +28,7 @@ exports.getPatient = (req, res) => {
         })
         .catch(function (err) {
             res.send(err);
-        })
+        });
 }
 
 exports.updatePatient = (req, res) => {
@@ -39,7 +39,7 @@ exports.updatePatient = (req, res) => {
         })
         .catch(function (err) {
             res.send(err);
-        })
+        });
 }
 
 exports.deletePatient = (req, res) => {
@@ -53,4 +53,4 @@ exports.deletePatient = (req, res) => {
         })
 }
 
-module.exports = router;
+module.exports = exports;
