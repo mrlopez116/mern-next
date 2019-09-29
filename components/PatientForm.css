@@ -1,0 +1,12 @@
+.PatientForm {
+    width: 30%;
+    margin: 25px auto;
+}
+
+.PatientForm-title {
+    text-align: center;
+}
+
+.PatientForm-submit{
+    width: 30%;
+}

@@ -1,8 +1,8 @@
-
+import PatientForm from '../components/PatientForm'
 const addPatient = () => {
     return (
         <div>
-            <h1>Hi there! This is the the patient form page.</h1>
+            <PatientForm />
         </div>
     )
 };

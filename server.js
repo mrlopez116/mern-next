@@ -13,12 +13,17 @@ app.prepare().then(() => {
     server.use(bodyParser.json());
     server.use(bodyParser.urlencoded({ extended: true }));
 
-    server.get("*", (req, res) => {
-        return handle(req, res);
-    })
+
 
     // Setting the internal API beginning URL
     server.use('/api/patients', patientRoutes);
+
+    server.get('/a/patients', (req, res) => {
+        res.send("helllooo");
+    });
+    server.get("*", (req, res) => {
+        return handle(req, res);
+    })
 
     server.listen(3001, err => {
         if (err) {

@@ -6,7 +6,7 @@
 .pnp.js
 /.next
 /dist
-
+/config/mongodb_config.js
 # testing
 /coverage
 
