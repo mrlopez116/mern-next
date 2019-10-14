@@ -2,7 +2,9 @@
 const withCSS = require('@zeit/next-css')
 
 module.exports = withCSS({
-    /* config options here */
+    /* This is a webpack config, to add more module add them in `config.module.rule.push`*/
+    // Modules added:
+    // url-loader: This is to load assets as imports in files.
     webpack(config, { buildId, dev, isServer, defaultLoaders, webpack }) {
         config.module.rules.push(
             {
@@ -19,19 +21,3 @@ module.exports = withCSS({
         return config
     }
 })
-
-// {
-            //     test: /\.(jpg|png|gif|svg|pdf|ico)$/,
-            //     use: [
-            //         {
-            //             loader: 'file-loader',
-            //             options: {
-            //                 name: '[path][name]-[hash:8].[ext]',
-            //                 publicPath: '/_next/'
-            //             },
-            //             // output: {
-            //             //     publicPath: '/.next'
-            //             // }
-            //         },
-            //     ]
-            //},

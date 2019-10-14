@@ -1,8 +1,11 @@
+// These are the imports for the app
 import React from 'react'
 import ReactDom from "react-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import App, { Container } from 'next/app'
-import SideNavbar from '../components/SideNavbar'
+
+// Componenents imports
+import SideNavbar from '../components/global/SideNavbar'
 
 
 class MyApp extends App {
@@ -18,6 +21,7 @@ class MyApp extends App {
     //     return { ...appProps }
     // }
 
+    // Anything that is before or after components is what will be shown on EVERY page.
     render() {
         const { Component, pageProps } = this.props
         return (

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import "./PatientForm.css";
+import "./patients-comp.css";
 import { Button, Form, FormGroup, Label, Input, FormText, Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap';
 const APIURL = '/api/patients';
-import * as apiCalls from '../api';
+import * as apiCalls from '../../api';
 
 class PatientForm extends Component {
     constructor(props) {

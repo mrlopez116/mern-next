@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import img from "../assets/images/NamibiaFlag.png";
+import img from "../../assets/images/NamibiaFlag.png";
 // Adding bootstrap
 import Link from "next/Link" // Allows us to create links to other pages with NEXT>js
 

@@ -1,4 +1,6 @@
+// Purpose of file: Set up Schema for patients.
 
+// Require mongoose in order to create Schema
 const mongoose = require('mongoose');
 // This is the patient schema for the database
 var patientSchema = new mongoose.Schema({
@@ -28,7 +30,7 @@ var patientSchema = new mongoose.Schema({
     }
 });
 
-// Create the schema
+// Create the schema. This will autommatically create a patients collection. This will automaticlaly pluarize the name.
 var Patient = mongoose.model('Paitent', patientSchema);
 
 // When file is required we send out Patient

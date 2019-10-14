@@ -1,4 +1,4 @@
-import PatientForm from '../components/PatientForm'
+import PatientForm from '../components/patients/PatientForm'
 const addPatient = () => {
     return (
         <div>
