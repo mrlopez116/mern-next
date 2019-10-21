@@ -1,6 +1,7 @@
+// Purpose of file: This is the file that loads all the patients.
 import React, { Component } from 'react';
 import PatientBlock from './PatientBlock';
-import * as apiCalls from '../api';
+import * as apiCalls from '../../api/patients';
 
 class PatientList extends Component {
     constructor(props) {

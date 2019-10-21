@@ -4,4 +4,5 @@
 const dev = process.env.NODE_ENV !== 'production';
 
 // Export the dev varibles
+// Tenary operator to determine if the app is running in dev mode or production mode
 export const server = dev ? 'http://localhost:3000' : 'http://localhost:3001';

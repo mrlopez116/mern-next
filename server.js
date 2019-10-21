@@ -13,9 +13,9 @@ app.prepare().then(() => {
     server.use(bodyParser.json());
     server.use(bodyParser.urlencoded({ extended: true }));
 
-    server.use('/', (req, res) => {
-        res.send('boom');
-    });
+    // server.use('/', (req, res) => {
+    //     res.send('boom');
+    // });
 
     // Setting the internal API beginning URL
     server.use('/api/patients', patientRoutes);
@@ -27,7 +27,7 @@ app.prepare().then(() => {
         return handle(req, res);
     })
 
-    server.listen(3001, err => {
+    server.listen(3000, err => {
         if (err) {
             console.log(`Something went wrong: ${err}`);
         } else {

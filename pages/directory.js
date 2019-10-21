@@ -1,4 +1,4 @@
-import PatientList from '../components/PatientList';
+import PatientList from '../components/patients/PatientList';
 
 const directory = () => {
     return (

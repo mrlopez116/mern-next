@@ -1,8 +1,11 @@
-import { server } from './config';
+import { server } from '../config';
 const fetch = require("node-fetch");
-const APIURL = `${server}/api/patients/`
+const APIURL = `${server}/api/patients/`;
+
+//alert("Testing");
 
 export async function getPatients() {
+
     return fetch(APIURL)
         .then(resp => {
             if (!resp.ok) {

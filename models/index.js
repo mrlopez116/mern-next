@@ -11,7 +11,6 @@ const MONGO_HOSTNAME = mongoConfig.MONGO_HOSTNAME;
 const MONGO_PORT = mongoConfig.MONGO_PORT;
 const MONGO_DB = mongoConfig.MONGO_DB; // The database will be created automatically
 
-
 // Allows us to use Promise syntax to do try and catches.
 mongoose.Promise = Promise;
 
